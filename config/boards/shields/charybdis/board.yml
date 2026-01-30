@@ -1,0 +1,5 @@
+board:
+  name: charybdis
+  vendor: modifier
+  socs:
+    - name: nrf52840
