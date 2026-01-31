@@ -4,14 +4,17 @@ param (
   [int]$IntervalSeconds = 5
 )
 
-function Invoke-UntilSuccess {
+function Invoke-UntilSuccess
+{
   param(
     [scriptblock]$ScriptBlock,
     [int]$IntervalSeconds = 5
   )
-  while ($true) {
+  while ($true)
+  {
     $result = & $ScriptBlock
-    if ($result) {
+    if ($result)
+    {
       Write-Host "ok"
       return
     }
@@ -20,14 +23,18 @@ function Invoke-UntilSuccess {
   }
 }
 
-function Copy-WithRetryCore {
-  if (!(Test-Path $Path) -or !(Test-Path (Split-Path $Target -Parent))) {
+function Copy-WithRetryCore
+{
+  if (!(Test-Path $Path) -or !(Test-Path $Target))
+  {
     return $false
   }
-  try {
+  try
+  {
     Copy-Item $Path -Destination $Target -Force
     return $true
-  } catch {
+  } catch
+  {
     return $false
   }
 }
