@@ -54,7 +54,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        0_base {
             bindings = <
 &kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5      &kp N6  &kp N7     &kp N8     &kp N9     &kp N0    &kp BSPC
 &kp TAB    &kp Q      &kp W      &kp E     &kp R     &kp T       &kp Y   &kp U      &kp I      &kp O      &kp P     &kp BSLH
@@ -64,7 +64,7 @@
             >;
         };
 
-        number {
+        1_number {
             bindings = <
 &trans  &trans   &trans  &trans  &trans  &trans         &trans    &trans    &trans        &trans     &trans  &trans
 &trans  &trans   &kp N7  &kp N8  &kp N9  &kp PLUS       &trans    &trans    &kp UP        &trans     &trans  &trans
@@ -74,7 +74,7 @@
             >;
         };
 
-        auto_mouse {
+        2_auto_mouse {
             bindings = <
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -84,7 +84,7 @@
             >;
         };
 
-        scroll {
+        3_scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -94,7 +94,7 @@
             >;
         };
 
-        snipe_layer {
+        4_snipe_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -104,7 +104,7 @@
             >;
         };
 
-        game {
+        5_game {
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5      &kp N6  &kp N7  &kp N8  &kp N9     &kp N0   &kp BSPC
 &kp TAB    &kp Q   &kp Q   &kp W   &kp E      &kp R       &kp T   &kp Y   &kp U   &kp I      &kp O    &kp P
@@ -114,7 +114,7 @@
             >;
         };
 
-        settings {
+        6_settings {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &bootloader      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &bt BT_CLR       &trans  &trans  &trans  &trans  &trans  &trans
@@ -124,7 +124,7 @@
             >;
         };
 
-        symbol {
+        7_symbol {
             bindings = <
 &trans  &trans  &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
