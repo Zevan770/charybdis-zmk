@@ -7,92 +7,48 @@
 
 / {
     behaviors {
-        hml: homewrow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homewrow_mods_left";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 53 54 55 56 57>;
-            tapping-term-ms = <300>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-on-release;
-        };
-
-        hmr: hmr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            hold-trigger-key-positions = <0 1 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 51 52 2 3 4 5>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-on-release;
-        };
-
-        tap_preferred: tap_preferred {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_PREFERRED";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <40>;
-            flavor = "tap-preferred";
-        };
+        /* hml: homewrow_mods_left { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     label = "homewrow_mods_left"; */
+        /*     bindings = <&kp>, <&kp>; */
+        /**/
+        /*     #binding-cells = <2>; */
+        /*     hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 53 54 55 56 57>; */
+        /*     tapping-term-ms = <300>; */
+        /*     flavor = "balanced"; */
+        /*     quick-tap-ms = <175>; */
+        /*     require-prior-idle-ms = <250>; */
+        /*     hold-trigger-on-release; */
+        /* }; */
+        /**/
+        /* hmr: hmr { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     label = "HMR"; */
+        /*     bindings = <&kp>, <&kp>; */
+        /**/
+        /*     #binding-cells = <2>; */
+        /*     tapping-term-ms = <300>; */
+        /*     hold-trigger-key-positions = <0 1 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 51 52 2 3 4 5>; */
+        /*     flavor = "balanced"; */
+        /*     quick-tap-ms = <175>; */
+        /*     require-prior-idle-ms = <250>; */
+        /*     hold-trigger-on-release; */
+        /* }; */
+        /**/
+        /* tap_preferred: tap_preferred { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     label = "TAP_PREFERRED"; */
+        /*     bindings = <&mo>, <&kp>; */
+        /**/
+        /*     #binding-cells = <2>; */
+        /*     tapping-term-ms = <40>; */
+        /*     flavor = "tap-preferred"; */
+        /* }; */
     };
 
     combos {
         compatible = "zmk,combos";
 
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <30 31>;
-        };
-
-        par {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <31 32>;
-        };
-
-        par2 {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <27 28>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <42 43>;
-        };
-
-        bra {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <27 26>;
-        };
-
-        right {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <32 33>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <40 41>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <39 40>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <39 38>;
-        };
     };
 
     keymap {
@@ -104,7 +60,7 @@
 &kp TAB    &kp Q      &kp W      &kp E     &kp R     &kp T       &kp Y   &kp U      &kp I      &kp O      &kp P     &kp BSLH
 &kp ESC   &kp A      &kp S      &kp D     &kp F     &kp G       &kp H   &kp J      &kp K      &kp L      &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z      &kp X      &kp C     &kp V     &kp B       &kp N   &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-&kp LALT   &kp SPACE  &kp LSHFT  &kp LGUI  &kp BSPC                      &kp LSHFT  &kp ENTER  &kp RCTRL  &kp BSPC  &kp RALT
+&kp SPACE   &kp LGUI  &kp LSHFT  &kp LALT  &kp BSPC                      &kp LSHFT  &kp ENTER  &kp RCTRL  &kp BSPC  &kp RALT
             >;
         };
 
