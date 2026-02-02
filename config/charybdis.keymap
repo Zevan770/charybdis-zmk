@@ -76,9 +76,9 @@
             bindings = <
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans     &trans     &trans  &trans     &trans
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans     &trans     &trans  &trans     &trans
-&trans     &trans     &trans     &trans     &trans     &trans      &trans  &mo 4      &mo 3      &trans  &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans      &mo 3   &mo 4      &mo 3      &trans  &trans     &trans
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans     &trans     &trans  &trans     &trans
-&mkp MCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp LCLK                      &mkp MCLK  &mkp LCLK  &trans  &mkp RCLK  &mkp MCLK
+&mkp MCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp LCLK                      &mkp MCLK  &mkp RCLK  &trans  &mkp LCLK  &mkp MCLK
             >;
         };
 
