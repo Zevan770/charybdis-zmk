@@ -26,8 +26,11 @@
     require-prior-idle-ms = <200>;
   	// 除了这些鼠标键，按下其他按键立刻退出 auto_mouse
     excluded-positions = <
-		35 34 33 //thumbs
-		48 49 50 51 52 53 54 55 56 57 // h j k
+		35 34 33 // h j k
+		53 54 55 56 57 // right thumbs
+
+		27 28 29
+		39 40
     >;
 };
 
