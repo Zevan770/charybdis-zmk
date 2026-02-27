@@ -75,7 +75,7 @@
         auto_mouse_2 {
             bindings = <
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans     &trans     &trans  &trans     &trans
-&trans     &trans     &trans     &trans     &mkp     &trans      &trans  &trans     &trans     &trans  &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans     &trans     &trans  &trans     &trans
 &trans     &trans     &trans     &mkp RCLK     &mkp LCLK     &mkp MCLK      &mo 3   &mo 4      &mo 3      &trans  &trans     &trans
 &trans     &trans     &trans     &mo 3     &mo 4     &trans      &trans  &trans     &trans     &trans  &trans     &trans
 &trans     &trans     &trans     &trans     &trans                     &trans  &mkp MCLK  &trans  &mkp LCLK  &mkp MCLK
