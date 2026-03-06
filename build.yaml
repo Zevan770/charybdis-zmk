@@ -12,7 +12,8 @@
 #     shield: reviung41
 #
 
-board: [ "nice_nano"]
-shield: [ "charybdis_left","charybdis_right"]
+# https://zmk.dev/blog/2025/12/09/zephyr-4-1#zmk-board-variant.:~:text=zmk%EF%BC%88%E7%9F%AD%EF%BC%9A-,nice_nano//zmk,-%EF%BC%89
+board: ["nice_nano//zmk"]
+shield: ["charybdis_left", "charybdis_right"]
 
 snippet: ["studio-rpc-usb-uart"]
