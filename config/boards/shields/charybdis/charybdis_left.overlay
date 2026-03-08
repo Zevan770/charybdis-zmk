@@ -41,7 +41,7 @@
 	// when layer 3 is active, the trackball will act as a mouse wheel
 	scroller {
 		layers = <3>;
-		input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)  &zip_xy_scaler 1 10  &zip_xy_to_scroll_mapper>;
+		input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)  &zip_xy_scaler 1 10  &zip_xy_to_scroll_mapper>;
 	};
 	// default when layer 4 is active, the trackball will move more slowly
 		snipe {
