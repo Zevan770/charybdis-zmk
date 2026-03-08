@@ -11,4 +11,4 @@ flash-right:
     ./scripts/Copy-WithRetry.ps1 ./firmware/charybdis_right-nice_nano__zmk-zmk.uf2 D:/
 
 [default]
-download-n-flash: download flash-left
+download-n-flash: download flash-left flash-right
