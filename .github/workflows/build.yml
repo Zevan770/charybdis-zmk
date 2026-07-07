@@ -1,4 +1,4 @@
-name: Build ZMK firmware
+name: Build ZMK firmware (nix)
 on:
   workflow_dispatch:
   push:
@@ -8,4 +8,8 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: urob/zmk-actions/.github/workflows/build-user-config.yml@main
+    with:
+      # Set to 'gnuarmemb' (fastest), 'zephyr', or 'zephyr-full' (most
+      # compatible). ZMK Studio requires 'zephyr-full'.
+      toolchain: zephyr
