@@ -5,3 +5,4 @@ modules
 firmware
 zephyr
 zmk
+/refs/*
