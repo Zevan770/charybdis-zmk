@@ -29,11 +29,11 @@
 	// 除了这些鼠标键，按下其他按键立刻退出 auto_mouse
 	// labels name see ./charybdis.h
 	excluded-positions = <
-		/* LN5 LN4 LN3 LN2 LN1 LN0    RN0 RN1 RN2 RN3 RN4 RN5 */
-		                LT1                               
-		    LM4 LM3 LM2 LM1 LM0    RM0                    
-		                LB1                               
-    		LH4 LH3 LH2 LH1 LH0                           
+		/*  LN5 LN4 LN3 LN2 LN1 LN0    RN0 RN1 RN2 RN3 RN4 RN5 */
+		            		LT2 LT1        RT0 RT1                
+		    		LM4 LM3 LM2 LM1 LM0    RM0 RM1
+		                		LB1        RB0                       
+    				LH4 LH3 LH2 LH1 LH0                           
 	>;
 };
 
