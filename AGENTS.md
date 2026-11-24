@@ -33,6 +33,15 @@ BastardKB Charybdis 分体键盘的 ZMK 固件用户配置仓库。
 └── .github/workflows/build.yml  # CI 工作流
 ```
 
+## `matrix_transform` / `physical_layout` / `chosen` 关系
+
+- **`charybdis.dtsi`** 定义了多个 `matrix_transform`（0/1/2）和对应的 `physical_layout`（0/1/2），分别对应标准版 / mini / nano 配列。
+- **实际按键映射**由 Keymap 文件（如 `charybdis.keymap`）顶部的 `chosen` 中的 `zmk,matrix-transform` 指定。若未显式指定，构建系统可能默认使用第一个或根据 `physical-layout` 推断（不推荐依赖隐式行为）。
+- **`physical_layout` 仅影响可视化**（OLED / keymap-drawer），**不影响键盘实际输入**。
+- **兼容性**：目前项目选择的`matrix_transform0`（完整矩阵）编译的固件可直接用于 `mini` / `nano`，因为这些配列的物理矩阵走线相同，只是省略了部分按键。超集固件向下兼容，缺失键位不会被触发。
+
+**我的键盘目前就是 nano!**
+
 ## Kconfig 合并优先级
 
 ZMK 将多个 Kconfig 片段**叠加合并** (不是替代)。后加载的同名符号覆盖先前的值。
