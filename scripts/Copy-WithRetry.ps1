@@ -1,8 +1,22 @@
 param (
   [Parameter(Mandatory = $true)][string]$Path,
-  [Parameter(Mandatory = $true)][string]$Target,
+  [Parameter(Mandatory = $true)][string]$VolumeLabel,
   [int]$IntervalSeconds = 5
 )
+
+function Get-DriveLetterByLabel
+{
+  param([string]$Label)
+  $volume = Get-Volume -ErrorAction SilentlyContinue |
+    Where-Object { $_.FileSystemLabel -eq $Label } |
+    Select-Object -First 1
+
+  if ($volume -and $volume.DriveLetter)
+  {
+    return "$($volume.DriveLetter):\"
+  }
+  return $null
+}
 
 function Invoke-UntilSuccess
 {
@@ -25,6 +39,11 @@ function Invoke-UntilSuccess
 
 function Copy-WithRetryCore
 {
+  $Target = Get-DriveLetterByLabel -Label $VolumeLabel
+  if (-not $Target)
+  { return $false 
+  }
+
   if (!(Test-Path $Path) -or !(Test-Path $Target))
   {
     return $false
