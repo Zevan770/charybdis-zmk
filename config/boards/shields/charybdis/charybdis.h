@@ -2,16 +2,16 @@
  * Charybdis (58-key standard) key labels
  * Based on matrix_transform0 (full 5×12 matrix)
  *
- * Follows https://github.com/urob/zmk-helpers/blob/main/docs/key_labels.md#standardization
+ * Naming of key labels Follows https://github.com/urob/zmk-helpers/blob/main/docs/key_labels.md#standardization
  *
  * Layout:
- *   ╭───────────────────────────┬───────────────────────────╮
- *   │ LN5 LN4 LN3 LN2 LN1 LN0  │ RN0 RN1 RN2 RN3 RN4 RN5  │   ← number row
- *   │ LT5 LT4 LT3 LT2 LT1 LT0  │ RT0 RT1 RT2 RT3 RT4 RT5  │   ← top row
- *   │ LM5 LM4 LM3 LM2 LM1 LM0  │ RM0 RM1 RM2 RM3 RM4 RM5  │   ← middle row
- *   │ LB5 LB4 LB3 LB2 LB1 LB0  │ RB0 RB1 RB2 RB3 RB4 RB5  │   ← bottom row
- *   │        LH4 LH3 LH2 LH1 LH0 │ RH0 RH1 RH2 RH3 RH4     │   ← thumb row (5 each side)
- *   ╰───────────────────────────┴───────────────────────────╯
+ *   ╭──────────────────────────────────────────────────────╮
+ *   │ LN5 LN4 LN3 LN2 LN1 LN0    RN0 RN1 RN2 RN3 RN4 RN5   │   ← number row
+ *   │ LT5 LT4 LT3 LT2 LT1 LT0    RT0 RT1 RT2 RT3 RT4 RT5   │   ← top row
+ *   │ LM5 LM4 LM3 LM2 LM1 LM0    RM0 RM1 RM2 RM3 RM4 RM5   │   ← middle row
+ *   │ LB5 LB4 LB3 LB2 LB1 LB0    RB0 RB1 RB2 RB3 RB4 RB5   │   ← bottom row
+ *   │     LH4 LH3 LH2 LH1 LH0    RH0 RH1 RH2 RH3 RH4       │   ← thumb row (5 each side)
+ *   ╰──────────────────────────────────────────────────────╯
  *
  * Values correspond to matrix positions (0–58) in matrix_transform0.
  */
