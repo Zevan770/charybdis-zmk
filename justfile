@@ -16,4 +16,4 @@ push-wait:
     gh run watch --compact
 
 [default]
-download-n-flash: push-wait download flash-left flash-right
+download-n-flash: push-wait download flash-left
