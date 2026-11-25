@@ -25,13 +25,13 @@
 // https://github.com/kot149/zenn-contents/blob/main/articles/zmk-auto-mouse-layer.md#%E3%82%AD%E3%83%BC%E5%85%A5%E5%8A%9B%E4%B8%AD%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%82%A6%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E8%AA%A4%E7%88%86%E9%98%B2%E6%AD%A2
 &zip_temp_layer {
 	// 需要在输入事件发生后数百毫秒 idle，过后再碰球才会触发 auto_mouse，避免误触发
-	require-prior-idle-ms = <600>;
+	require-prior-idle-ms = <500>;
 	// 除了这些鼠标键，按下其他按键立刻退出 auto_mouse
 	// labels name see ./charybdis.h
 	excluded-positions = <
 		/*  LN5 LN4 LN3 LN2 LN1 LN0    RN0 RN1 RN2 RN3 RN4 RN5 */
 		            		LT2 LT1        RT0 RT1                
-		    		LM4 LM3 LM2 LM1 LM0    RM0 RM1
+		    LM5	LM4 LM3 LM2 LM1 LM0    RM0 RM1 RM2
 		                		LB1        RB0                       
     				LH4 LH3 LH2 LH1 LH0                           
 	>;
