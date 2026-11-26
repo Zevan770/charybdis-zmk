@@ -13,7 +13,11 @@
 #
 
 # Zephyr 4.1 HWMv2: //zmk variant required
-board: ["nice_nano//zmk"]
-shield: ["charybdis_left", "charybdis_right"]
-
-snippet: ["studio-rpc-usb-uart"]
+include:
+  - board: nice_nano//zmk
+    shield: charybdis_left
+    snippet: studio-rpc-usb-uart
+  - board: nice_nano//zmk
+    shield: charybdis_right
+  - board: nice_nano//zmk
+    shield: settings_reset
